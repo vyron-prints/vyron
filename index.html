@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>VYRON — Designed. Printed. Defined.</title>
+  <meta name="description" content="Premium gaming accessories. Different by design.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: #080808;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7%;
+      border-bottom: 1px solid #242424;
+    }
+    .logo { font-size: 27px; font-weight: 800; letter-spacing: 5px; }
+    nav a { color: #aaa; text-decoration: none; font-size: 12px; margin-left: 25px; }
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .eyebrow { color: #888; letter-spacing: 4px; font-size: 10px; margin-bottom: 30px; }
+    h1 { font-size: clamp(48px, 10vw, 105px); letter-spacing: 7px; line-height: 1.05; }
+    .hero p { color: #999; margin-top: 25px; font-size: 14px; letter-spacing: 2px; }
+    .btn {
+      display: inline-block;
+      margin-top: 38px;
+      padding: 16px 30px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      transition: .25s;
+    }
+    .btn:hover { background: #ccc; transform: translateY(-3px); }
+    .products { padding: 80px 7%; }
+    .section-label { color: #888; font-size: 10px; letter-spacing: 4px; }
+    h2 { font-size: 34px; margin: 15px 0 40px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+    .product {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #242424;
+      transition: .3s;
+    }
+    .product:hover { border-color: #777; transform: translateY(-4px); }
+    .visual {
+      aspect-ratio: 1.2;
+      background: linear-gradient(145deg,#292929,#101010);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
+    .keycap {
+      width: 110px;
+      height: 110px;
+      background: linear-gradient(145deg,#fff,#bbb);
+      border-radius: 15px;
+      box-shadow: 0 18px 35px #000;
+      transform: rotate(-12deg);
+      display: grid;
+      place-items: center;
+      color: #111;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .stand {
+      width: 130px;
+      height: 100px;
+      border: 5px solid #ddd;
+      border-radius: 18px;
+      transform: perspective(200px) rotateX(15deg);
+    }
+    .product h3 { font-size: 16px; letter-spacing: 2px; }
+    .product p { color: #888; font-size: 12px; margin-top: 9px; }
+    .custom {
+      padding: 90px 20px;
+      text-align: center;
+      border-top: 1px solid #242424;
+    }
+    .custom p { color: #999; margin-top: 15px; }
+    footer {
+      padding: 30px 7%;
+      border-top: 1px solid #242424;
+      display: flex;
+      justify-content: space-between;
+      color: #777;
+      font-size: 11px;
+    }
+    @media(max-width:600px) {
+      nav { padding: 0 5%; }
+      nav a { margin-left: 12px; font-size: 10px; }
+      .grid { grid-template-columns: 1fr; }
+      .products { padding: 60px 5%; }
+      footer { gap: 15px; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">VYRON</div>
+    <div>
+      <a href="#products">COLLECTION</a>
+      <a href="#about">ABOUT</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="eyebrow">INDEPENDENT GAMING DESIGN</div>
+    <h1>DESIGNED.<br>PRINTED.<br>DEFINED.</h1>
+    <p>Premium accessories. Different by design.</p>
+    <a class="btn" href="#products">EXPLORE COLLECTION</a>
+  </section>
+  <section class="products" id="products">
+    <div class="section-label">01 / THE COLLECTION</div>
+    <h2>Made to stand out.</h2>
+    <div class="grid">
+      <div class="product">
+        <div class="visual"><div class="keycap">✳</div></div>
+        <h3>ASTRAL 01</h3>
+        <p>Signature futuristic keycap · Concept</p>
+      </div>
+      <div class="product">
+        <div class="visual"><div class="stand"></div></div>
+        <h3>STAND 01</h3>
+        <p>Minimal controller stand · Concept</p>
+      </div>
+    </div>
+  </section>
+  <section class="custom" id="about">
+    <div class="section-label">02 / YOUR DESIGN</div>
+    <h2>Something different?</h2>
+    <p>Custom ideas. Unique creations. Made around you.</p>
+    <a class="btn" href="mailto:hello@vyron.com">GET IN TOUCH</a>
+  </section>
+  <footer>
+    <span>VYRON © 2026</span>
+    <span>DESIGNED. PRINTED. DEFINED.</span>
+  </footer>
+</body>
+</html>
